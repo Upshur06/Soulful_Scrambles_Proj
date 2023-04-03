@@ -1,0 +1,19 @@
+.breakfast_productContainer{
+    border: 2px solid rgb(146, 143, 143);
+    display: flex;
+    width: 650px;
+    margin: 5px;
+}
+
+.breakfast_info{
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.breafast_img{
+    border: 2px solid black;
+    /* height: 150px; */
+    width: 150px;
+}

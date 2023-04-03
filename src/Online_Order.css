@@ -1,0 +1,38 @@
+.Online{
+
+}
+
+.order__imageContainer{
+    border-bottom: 3px double rgb(97, 109, 125);
+    height: 330px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order__image{
+    /* border: 2px solid red; */
+    width: 70vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.order__utinsils{
+    /* border: 2px solid rgb(49, 164, 79); */
+    border-radius: 45%;
+    width: 140px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+.Breakfast_Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Order__row{
+    padding: 0 5px;
+}

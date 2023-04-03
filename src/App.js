@@ -1,9 +1,15 @@
 import './App.css';
+import Header from './Header';
+import Home from './Home'
+import Online_Order from './Online_Order';
 
 function App() {
   return (
     <div className="App">
-      <h1>Soulful Scrambles Cafe</h1>
+      <Header />
+      {/* <Home /> */}
+      <Online_Order />
+
     </div>
   );
 }
