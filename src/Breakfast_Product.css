@@ -1,7 +1,10 @@
 .breakfast_productContainer{
     border: 2px solid rgb(146, 143, 143);
+    background-color: rgba(245, 245, 245, 0.726);
     display: flex;
-    width: 650px;
+    max-width: 46vw;
+    min-width: 500px;
+    /* width: 45vw; */
     margin: 5px;
 }
 
@@ -12,8 +15,26 @@
     padding: 5px 10px;
 }
 
-.breafast_img{
+.breafast_imgContainer{
     border: 2px solid black;
     /* height: 150px; */
     width: 150px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.breakfast_img{
+    width: 140px;
+}
+
+.breafast_imgContainer button{
+    background-color: rgb(235, 233, 219);
+    padding: 5px 0;
+}
+
+.breafast_imgContainer button:hover {
+    background-color: rgb(118, 87, 13);
+    font-style: italic;
+    cursor: pointer;
 }

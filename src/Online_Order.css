@@ -1,5 +1,6 @@
 .Online{
-
+    border: 3px solid orange;
+    padding: 0 10px;
 }
 
 .order__imageContainer{
