@@ -2,10 +2,11 @@
     border: 2px solid rgb(146, 143, 143);
     background-color: rgba(245, 245, 245, 0.726);
     display: flex;
-    max-width: 46vw;
+    justify-content: space-between;
+    max-width: 35vw;
     min-width: 500px;
-    /* width: 45vw; */
-    margin: 5px;
+    /* width: 550px; */
+    margin-bottom: 15px;
 }
 
 .breakfast_info{
@@ -18,14 +19,16 @@
 .breafast_imgContainer{
     border: 2px solid black;
     /* height: 150px; */
-    width: 150px;
+    /* width: 140px; */
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-around;
 }
 
 .breakfast_img{
+    /* object-fit: contain; */
     width: 140px;
+    height: 140px;
 }
 
 .breafast_imgContainer button{

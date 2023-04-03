@@ -1,15 +1,15 @@
 .Online{
-    border: 3px solid orange;
+    /* border: 5px solid green; */
     padding: 0 10px;
 }
 
 .order__imageContainer{
-    border-bottom: 3px double rgb(97, 109, 125);
     height: 330px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .order__image{
@@ -30,10 +30,25 @@
 
 .Breakfast_Container{
     display: flex;
+    flex-direction: column;
+
+}
+
+.Breakfast_Product_Container{
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+
 }
 
 .Order__row{
-    padding: 0 5px;
+    padding: 0 15px;
+}
+
+.order__healthInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+    margin-bottom: 25px;
 }
