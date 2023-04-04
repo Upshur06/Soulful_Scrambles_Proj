@@ -31,14 +31,12 @@
 .Breakfast_Container{
     display: flex;
     flex-direction: column;
-
 }
 
 .Breakfast_Product_Container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .Order__row{
