@@ -6,8 +6,11 @@ import CreateIcon from '@mui/icons-material/Create'
 import BubbleChartOutlinedIcon from '@mui/icons-material/BubbleChartOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from "react-router-dom";
+import { useStateValue } from './StateProvider'
 
 function Header() {
+    const [{ basket }, dispatch] = useStateValue();
+
     return (
         <div className='header'>
             <img className='header__logo' src="/images/Soulful_Scrambles_Cafe.png"/>
@@ -59,7 +62,7 @@ function Header() {
                 <Link to="/checkout">
                     <div className='header__optionBasket'>
                         <ShoppingCartOutlinedIcon />
-                        <span className='header__optionLineTwo header__basketCount'>0</span>
+                        <span className='header__optionLineTwo header__basketCount'>{basket?.length}</span>
                     </div>
                 </Link>
             </div>
