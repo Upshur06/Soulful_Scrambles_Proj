@@ -15,15 +15,15 @@ function Header() {
                     Home
                     <LocalCafeIcon className='header__homeIcon'/>
                 </div>
-                <div className='header__wrapper_nav'>
+                <div className='header__container_nav'>
                     Menu
                     <RestaurantMenuIcon className='header__homeIcon'/>
                 </div>
-                <div className='header__wrapper_nav'>
+                <div className='header__container_nav'>
                     Order Online
                     <CreateIcon className='header__homeIcon'/>
                 </div>
-                <div className='header__wrapper_nav'>
+                <div className='header__container_nav'>
                     Info
                     <BubbleChartOutlinedIcon className='header__homeIcon'/>
                 </div>
