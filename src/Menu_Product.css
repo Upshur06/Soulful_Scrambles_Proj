@@ -1,0 +1,44 @@
+.Menu_Product{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.breakfastMenu_img{
+    width: 150px;
+    height: 140px;
+}
+
+.menu_tip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_tip p{
+    font-style: italic;
+}
+
+
+.breakfastMenu_info{
+    /* border: 2px solid black; */
+    width: 70%;
+    display: flex;
+    align-items: end;
+}
+
+.menu_info{
+    /* border: 2px solid rgb(140, 54, 54); */
+    width: 60%;
+    margin-left: 15px;
+    /* display: flex; */
+}
+
+.breakfastMenu_description{
+    color: #c17c28;
+    font-style: italic;
+}
+
+.breakfastMenu_info p{
+    padding: 0 5px;
+}

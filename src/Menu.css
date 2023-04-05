@@ -1,0 +1,11 @@
+.menu_Container{
+    padding: 0 10px;
+}
+
+.menu__healthInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+    margin-bottom: 25px;
+}

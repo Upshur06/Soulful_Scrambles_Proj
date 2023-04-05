@@ -1,0 +1,11 @@
+.info_Container{
+    padding: 50px 12vw;
+}
+
+.info_Container p{
+    font-style: italic;
+}
+
+.info_Container h4{
+    font-weight: bolder;
+}
