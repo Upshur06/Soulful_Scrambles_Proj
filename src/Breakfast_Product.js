@@ -10,7 +10,7 @@ function Breakfast_Product({ id, title, description, img, price }) {
 
     const addToBasket = () =>{
         dispatch({
-            type: "ADD_TO_BASKET",
+            type: "ADD_TO_ORDER",
             item: {
                 id: id,
                 title: title,

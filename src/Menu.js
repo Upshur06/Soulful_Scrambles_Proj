@@ -10,7 +10,7 @@ function Menu() {
                     <h2>Menu</h2>
                 </div>
 
-                <p>18% SERVICE FEE ON TABLES OVER $50.</p>
+                <p>10% SERVICE FEE ON TABLES OVER $25.</p>
                 <p>NO SPLIT CHECKS.</p>
             </div>
 

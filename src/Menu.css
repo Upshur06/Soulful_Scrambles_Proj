@@ -9,3 +9,13 @@
     font-style: italic;
     margin-bottom: 25px;
 }
+
+.menu_tip h2{
+    text-decoration: underline;
+}
+
+.menu_tip p{
+    font-style: italic;
+    padding: 0;
+    margin: 5px 0;
+}
