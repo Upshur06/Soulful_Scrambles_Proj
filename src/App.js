@@ -5,6 +5,7 @@ import Menu from './Menu';
 import Info from './Info';
 import Online_Order from './Online_Order';
 import Checkout from './Checkout';
+import Login from './Login'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -14,6 +15,9 @@ function App() {
       <div className="App">  
         <Header />
       <Routes>
+        <Route path='/login'
+          element={<Login />}
+        />
         <Route path='/order'
           element={<Online_Order />}
         />
