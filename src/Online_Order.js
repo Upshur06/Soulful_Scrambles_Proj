@@ -117,7 +117,7 @@ function Online_Order() {
                             title ='Biscuit with Gravy' 
                             description='Biscuit with Gravy' 
                             img='https://media.istockphoto.com/id/1287213014/photo/biscuits-and-creamy-sausage-gravy.jpg?b=1&s=170667a&w=0&k=20&c=egG6qObLdZy_fQCA4cJKq2To6SL9wtqkoCPNRIEaX4g=' 
-                            price={7.50} 
+                            price={7.55} 
                         />
                         <div></div>
                     </div>
@@ -149,7 +149,7 @@ function Online_Order() {
                             title ='Cinnamon rolls' 
                             description='Baked Cinnamon rolls' 
                             img='https://media.istockphoto.com/id/1405973450/photo/cinnamon-buns.jpg?b=1&s=170667a&w=0&k=20&c=afPQsjZSetAfiql7QXGhHDofKhlunln-42SaTaK1yyY=' 
-                            price={5.70}
+                            price={5.75}
                         />
                         <Breakfast_Product 
                             title ='Oatmeal' 
@@ -164,7 +164,7 @@ function Online_Order() {
                             title ='Grits' 
                             description='Grits with you choice of salt, pepper, sugar, or butter' 
                             img='https://media.istockphoto.com/id/172690719/photo/grits.jpg?b=1&s=170667a&w=0&k=20&c=Q_6pXkFlSf-quTx3vR8HkePkNh-Lci3M5QbihiPl64Y=' 
-                            price={6.30} 
+                            price={6.35} 
                         />
                         <Breakfast_Product 
                             title ='Cream of Wheat' 
@@ -201,7 +201,7 @@ function Online_Order() {
                             title ='Coffee' 
                             description='Decafe or regular coffee' 
                             img='https://media.istockphoto.com/id/1358132613/photo/refreshing-hot-cup-of-coffee-at-a-cafe.jpg?b=1&s=170667a&w=0&k=20&c=yWCgrKacdKBjpwTStBv8IBnMjuIECKUTfuCtkAfyMlc=' 
-                            price={5.70}
+                            price={5.75}
                         />
                         <Breakfast_Product 
                             title ='Tea' 
@@ -216,7 +216,7 @@ function Online_Order() {
                             title ='Latte' 
                             description='Hot Latte' 
                             img='https://images.unsplash.com/photo-1632845407875-10b4d85e6bf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1vY2hhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60' 
-                            price={6.30} 
+                            price={6.35} 
                         />
                         <Breakfast_Product 
                             title ='Cidar' 

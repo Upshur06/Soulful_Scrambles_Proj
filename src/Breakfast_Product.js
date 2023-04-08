@@ -8,7 +8,7 @@ function Breakfast_Product({ id, title, description, img, price }) {
     // console.log('This is the basket', basket);
     // console.log('cost:', {price});
 
-    const addToBasket = () =>{
+    const addToOrder = () =>{
         dispatch({
             type: "ADD_TO_ORDER",
             item: {
@@ -39,7 +39,7 @@ function Breakfast_Product({ id, title, description, img, price }) {
             </div>
             <div className='breafast_imgContainer'>
                 <img className='breakfast_img' src={img} />
-                <button onClick={addToBasket}>Add to cart</button>
+                <button onClick={addToOrder}>Add to cart</button>
             </div>
         </div>
     )

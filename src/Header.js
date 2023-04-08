@@ -15,28 +15,28 @@ function Header() {
         <div className='header'>
             <img className='header__logo' src="/images/Soulful_Scrambles_Cafe.png"/>
             <div className='header__container'>
-                <Link to="/">
+                <Link className='header__Link' to="/">
                     <div className='header__container_nav'>
                         Home
                         <LocalCafeIcon className='header__homeIcon'/>
                     </div>
                 </Link>
 
-                <Link to="/menu">
+                <Link className='header__Link' to="/menu">
                     <div className='header__container_nav'>
                         Menu
                         <RestaurantMenuIcon className='header__homeIcon'/>
                     </div>
                 </Link>
 
-                <Link to="/order">
+                <Link className='header__Link' to="/order">
                     <div className='header__container_nav'>
                         Order Online
                         <CreateIcon className='header__homeIcon'/>
                     </div>
                 </Link>
 
-                <Link to="/info">
+                <Link className='header__Link' to="/info">
                     <div className='header__container_nav'>
                         Info
                         <BubbleChartOutlinedIcon className='header__homeIcon'/>
@@ -59,7 +59,7 @@ function Header() {
                     <span className='header__optionLineTwo'>Prime</span>
                 </div>
 
-                <Link to="/checkout">
+                <Link className='header__Link' to="/checkout">
                     <div className='header__optionBasket'>
                         <ShoppingCartOutlinedIcon />
                         <span className='header__optionLineTwo header__basketCount'>{basket?.length}</span>
