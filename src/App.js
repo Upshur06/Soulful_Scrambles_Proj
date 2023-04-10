@@ -7,6 +7,7 @@ import Info from './Info';
 import Online_Order from './Online_Order';
 import Checkout from './Checkout';
 import Login from './Login'
+import Payment from './Payment';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { auth } from './firebase';
@@ -39,6 +40,9 @@ function App() {
       <div className="App">  
         <Header />
       <Routes>
+        <Route path='/payment'
+          element={<Payment />}
+        />
         <Route path='/login'
           element={<Login />}
         />
