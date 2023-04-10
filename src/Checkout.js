@@ -5,33 +5,19 @@ import { useStateValue } from './StateProvider';
 import CheckoutProduct from './CheckoutProduct';
 
 function Checkout() {
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
 
     return (
         <div className='checkout'>
             <div className='checkout__left'>
                 <img className='checkout_ad' src='https://media.istockphoto.com/id/1389175014/photo/various-types-of-bread-ears-of-wheat-flying-on-gray-background-classic-wheat-round-bread.jpg?b=1&s=170667a&w=0&k=20&c=XmCULiVsIJFQpexx_EnYGz0DIDYEM3g7giB3rZNwbNQ=' alt=''/>
                 <div>
-                    <h2 className='checkout__title'>Your Order</h2>
-
-                    {/* <CheckoutProduct 
-                        id='123456'
-                        title ='Cream of Wheat' 
-                        img='https://media.istockphoto.com/id/1371790658/photo/bowl-of-oatmeal-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=GvAZdTe4Q0IyPygbungWiEQ63CJxG1a1NJWqBLmay-Y='  
-                        price={3.45}
-                        description='Cream of Wheat with you choice of fruits, sugar, or cinnamon' 
-                    />
-
-                    <CheckoutProduct 
-                        id='123456'
-                        title ='Cream of Wheat' 
-                        img='https://media.istockphoto.com/id/1371790658/photo/bowl-of-oatmeal-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=GvAZdTe4Q0IyPygbungWiEQ63CJxG1a1NJWqBLmay-Y='  
-                        price={3.45}
-                        description='Cream of Wheat with you choice of fruits, sugar, or cinnamon' 
-                    /> */}
+                    <div className='order__info'>
+                        <h3>Greetings: {user?.email}</h3>
+                        <h2 className='checkout__title'>Your Order</h2>
+                    </div>
                     
-                    {basket.map(item => (
-                        
+                    {basket.map(item => (                        
                         <CheckoutProduct 
                             id={item.id}
                             title={item.title}
