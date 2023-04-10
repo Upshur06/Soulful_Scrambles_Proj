@@ -13,6 +13,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+
+const promise = loadStripe('pk_test_51HQSx1DeGDdFSiaV74x9i0734dGABzbqhWRsaFgPInnRkVjpCGpRhoopapoe9z6HKTXP6GTUkF6xKie4Svr9N3t2009YkqVCO2');
+
 function App() {
   const [{}, dispatch] = useStateValue();
 
@@ -36,34 +41,37 @@ function App() {
   }, [])
 
   return (
-    <Router>  
-      <div className="App">  
-        <Header />
-      <Routes>
-        <Route path='/payment'
-          element={<Payment />}
-        />
-        <Route path='/login'
-          element={<Login />}
-        />
-        <Route path='/order'
-          element={<Online_Order />}
-        />
-        <Route path='/checkout'
-          element={<Checkout />}           
-        />
-        <Route path='/info'
-          element={<Info />}
-        />
-        <Route path='/menu'
-          element={<Menu />}
-        />
-        <Route path='/'
-          element={<Home />}
-        />
-      </Routes>
-      </div>
-    </Router>
+    <Elements stripe={promise}>
+      <Router>  
+        <div className="App">  
+          <Header />
+        <Routes>
+          <Route path='/payment'
+            
+            element={<Payment />}
+          />
+          <Route path='/login'
+            element={<Login />}
+          />
+          <Route path='/order'
+            element={<Online_Order />}
+          />
+          <Route path='/checkout'
+            element={<Checkout />}           
+          />
+          <Route path='/info'
+            element={<Info />}
+          />
+          <Route path='/menu'
+            element={<Menu />}
+          />
+          <Route path='/'
+            element={<Home />}
+          />
+        </Routes>
+        </div>
+      </Router>
+    </Elements>
   );
 }
 
