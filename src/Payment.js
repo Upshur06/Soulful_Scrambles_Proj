@@ -1,5 +1,5 @@
 import './Payment.css'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useStateValue } from './StateProvider'
 import CheckoutProduct from './CheckoutProduct';
 import { getBasketTotal } from './reducer';
@@ -8,24 +8,57 @@ import { useElements } from '@stripe/react-stripe-js';
 import { CardElement } from '@stripe/react-stripe-js';
 import { useStripe } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
+import { useNavigate } from 'react-router-dom';
+// import { axios } from 'axios';
+// import { instance } from './axios';
+
 
 function Payment() {
     const [{ basket, user }, dispatch] = useStateValue();
     const stripe = useStripe();
     const elements = useElements();
+    const history = useNavigate();
     
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(true);
     const [succeeded, setSucceded] = useState(false);
     const [processing, setProcessing] = useState("");
+    const [clientSecret, setClientSecret] = useState(true);
+
+    useEffect(() => {
+        const getClientSecret = async () => {
+            const response = await axios({
+                method: 'post',
+                url: `/payments/create?total=${getBasketTotal(basket) * 100}`
+            });
+            setClientSecret(response.data.clientSecret);
+        }
+
+        getClientSecret();
+    }, [basket])
 
     const handleSubmit = async (e) => {
+        e.preventDefault();
+        setProcessing(true);
 
+        const payload = await stripe.confirmCardPayment(clientSecret, {
+            payment_method: {
+                card: elements.getElement(CardElement)
+            }
+        }).then(({ paymentIntent }) => {
+            setSucceded(true);
+            setError(null);
+            setProcessing(false);
+
+            history.replace('/order')
+        })
     }
 
     const handleChange = (e) => {
         setDisabled(e.empty);
         setError(e.error ? e.error.messaage : "");
+
+    
     }
 
     return (

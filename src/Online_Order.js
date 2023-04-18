@@ -41,7 +41,7 @@ function Online_Order() {
                             title ='Bombay French Toast' 
                             description='French Toast with blueberries' 
                             img='https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnJlYWtmYXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60' 
-                            price={13.45} 
+                            price={13.49} 
                         />
                     </div>
 
@@ -56,7 +56,7 @@ function Online_Order() {
                             title ='Waffle Wonderland' 
                             description='Belgin waffles with powder sugar and rasberries' 
                             img='https://images.unsplash.com/photo-1568051243851-f9b136146e97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FmZmxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'  
-                            price={15.65} 
+                            price={15.99} 
                         />
                     </div>
 
@@ -71,7 +71,7 @@ function Online_Order() {
                             title ='Tastiest Pancakes' 
                             description='Pancakes with stawberries and bananas' 
                             img='https://images.unsplash.com/photo-1597699401474-e8714c1b7879?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'  
-                            price={11.25} 
+                            price={11.99} 
                         />
                     </div>
                 </div>
@@ -93,7 +93,7 @@ function Online_Order() {
                             title ='Sausage Patty' 
                             description='Pork or Turkey Sausage Patties' 
                             img='https://media.istockphoto.com/id/162424970/photo/cooking-sausage.jpg?b=1&s=170667a&w=0&k=20&c=D04qu4kEgkwXkOHiyvXZBP-itzIzmRxhY-wrgRi-Y_M=' 
-                            price={5.35} 
+                            price={5.99} 
                         />
                     </div>
 
@@ -134,7 +134,7 @@ function Online_Order() {
                             title ='Bagles' 
                             description='Bagels with you choice of cream chesse or butter' 
                             img='https://media.istockphoto.com/id/183026429/photo/pile-of-assorted-bagels-on-reflective-surface.jpg?b=1&s=170667a&w=0&k=20&c=ecrJvtlkx3KHGw7Qurm911Hvyz0n5ippYF3gosS7RKM='  
-                            price={3.45} 
+                            price={3.50} 
                         />
                         <Breakfast_Product 
                             title ='Muffin' 
@@ -192,7 +192,7 @@ function Online_Order() {
                             title ='Apple Juice' 
                             description='Apple Juice' 
                             img='https://media.istockphoto.com/id/1323857956/photo/drinking-glass-full-of-apple-juice-isolated-on-white.jpg?b=1&s=170667a&w=0&k=20&c=XIWWucyqnFMuxHt_FO9mi8qmHQ9mypBjfZqQl-I38sM=' 
-                            price={2.55} 
+                            price={2.99} 
                         />
                     </div>
 
@@ -207,7 +207,7 @@ function Online_Order() {
                             title ='Tea' 
                             description='Packets of tea' 
                             img='https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHRlYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'  
-                            price={3.65} 
+                            price={3.69} 
                         />
                     </div>
 
@@ -222,7 +222,7 @@ function Online_Order() {
                             title ='Cidar' 
                             description='Hot Cider with Cinnamon' 
                             img='https://media.istockphoto.com/id/155429291/photo/hot-mulled-cider.jpg?b=1&s=170667a&w=0&k=20&c=gMNhgMievwc1QTIgCRKXLnoliRw6ZmUTFiIr8oYF_SI='  
-                            price={14.65}
+                            price={4.99}
                         />
                     </div>
                 </div>
