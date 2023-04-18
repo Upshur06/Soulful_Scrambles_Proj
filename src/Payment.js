@@ -9,7 +9,7 @@ import { CardElement } from '@stripe/react-stripe-js';
 import { useStripe } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { useNavigate } from 'react-router-dom';
-// import { axios } from 'axios';
+import axios from 'axios';
 // import { instance } from './axios';
 
 
