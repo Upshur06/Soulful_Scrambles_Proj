@@ -1,18 +1,20 @@
 .checkout{
     display: flex;
-    /* justify-content: space-between; */
+    /* border: 4px solid black; */
+    justify-content: space-between;
     padding: 20px;
     height: max-content;
 }
 
 .checkout_ad{
-    /* height: 200px; */
+    height: 35vh;
     width: 100%;
     margin-bottom: 10px;
 }
 
 .checkout__left{
     /* border: 2px solid green; */
+    width: 60vw;
 }
 
 .checkout__right{
@@ -26,5 +28,5 @@
 }
 
 .order__info{
-    
+
 }
